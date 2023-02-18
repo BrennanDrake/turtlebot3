@@ -78,21 +78,20 @@
   <joint name="rfid_base_joint" type="fixed">
     <parent link="base_link"/>
     <child link="rfid_base_link"/>
-    <origin xyz="0.0 0.08 0.023" rpy="0 0 0"/>
-    <axis xyz="0 0 1"/>
+    <origin xyz="-0.14 0.0 0.0" rpy="0 0 0"/>
   </joint>
 
   <link name="rfid_base_link">
     <visual>
-      <origin xyz="-0.032 0 0.0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 ${pi}"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/bases/rfid_base.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://turtlebot3_description/meshes/bases/rfid_base.stl" scale="1 1 1"/>
       </geometry>
       <material name="light_black"/>
     </visual>
 
     <collision>
-      <origin xyz="-0.032 0 0.070" rpy="0 0 0"/>
+      <origin xyz="0 0 0." rpy="0 0 0"/>
       <geometry>
         <box size="0.140 0.140 0.143"/>
       </geometry>

@@ -101,7 +101,7 @@
   <joint name="rfid_sensor_joint" type="fixed">
     <parent link="rfid_base_link"/>
     <child link="rfid_sensor_link"/>
-    <origin xyz="-0.0425 0.045 .005" rpy="0 0 1.57079632679"/>
+    <origin xyz="-0.0425 0.045 .01" rpy="0 0 1.57079632679"/>
   </joint>
 
   <link name="rfid_sensor_link">

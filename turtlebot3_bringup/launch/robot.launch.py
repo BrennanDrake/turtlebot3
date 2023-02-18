@@ -94,7 +94,7 @@ def generate_launch_description():
 
         Node(
             package="rfid_publisher",
-            executable="rfid_pub.py",
+            executable="rfid_talker",
             output="screen"),
 
     ])

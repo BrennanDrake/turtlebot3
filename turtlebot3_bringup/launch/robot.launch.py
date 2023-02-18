@@ -91,4 +91,10 @@ def generate_launch_description():
             parameters=[tb3_param_dir],
             arguments=['-i', usb_port],
             output='screen'),
+
+        Node(
+            package="rfid_publisher",
+            executable="rfid_pub.py",
+            output="screen"),
+
     ])

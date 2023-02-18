@@ -85,7 +85,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 3.14159"/>
       <geometry>
-        <mesh filename="package://turtlebot3_description/meshes/bases/rfid_base.stl" scale="0.1 0.1 0.1"/>
+        <mesh filename="package://turtlebot3_description/meshes/bases/rfid_base.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="light_black"/>
     </visual>

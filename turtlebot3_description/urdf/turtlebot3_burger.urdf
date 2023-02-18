@@ -96,6 +96,22 @@
         <box size="0.140 0.140 0.143"/>
       </geometry>
     </collision>
+  </link>
+
+  <joint name="rfid_sensor_joint" type="fixed">
+    <parent link="rfid_base_link"/>
+    <child link="rfid_sensor_link"/>
+    <origin xyz="-0.1 0.1 0.1" rpy="0 0 1.57079632679"/>
+  </joint>
+
+  <link name="rfid_sensor_link">
+    <visual>
+      <origin xyz=".01 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.005 0.05 0.08"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
 
   </link>
 
